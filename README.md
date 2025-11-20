@@ -38,11 +38,15 @@ Esta API implementa um rate limiter (limitador de requisições) utilizando Redi
 2. **Configure o arquivo `.env` na raiz do projeto:**
    Exemplo:
    ```env
-   API_KEY=12345
+   API_KEY=sua_chave
    WEB_SERVER_PORT=8080
+
    REDIS_ADDRESS=localhost:6379
+   REDIS_PASSWORD=sua_senha
+
    MAX_REQUESTS_PER_IP=5
    MAX_REQUESTS_PER_API_KEY=10
+
    TIME_INTERVAL_MINUTES=1
    BLOCK_DURATION_MINUTES=1
    ```
@@ -62,14 +66,14 @@ Esta API implementa um rate limiter (limitador de requisições) utilizando Redi
 
 1. **Faça requisições HTTP:**
    ```sh
-   curl -H "api-key: 12345" http://localhost:8080/
+   curl -H "api-key: sua_chave" http://localhost:8080/
    ```
    - Troque o valor do header `api-key` conforme sua configuração.
    - Se exceder o limite, receberá status 429 (Too Many Requests).
 
 2. **Testes automatizados:**
    ```sh
-   go test github.com/JoaoPedroVicentin/rate-limiter/internal/entity/rate_limiter
+   go test github.com/JoaoPedroVicentin/rate-limiter/internal/entity/rate_limiter.git
    ```
 
 <div align="center">
