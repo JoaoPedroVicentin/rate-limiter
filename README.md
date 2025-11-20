@@ -31,7 +31,7 @@ Esta API implementa um rate limiter (limitador de requisições) utilizando Redi
 
 1. **Clone o repositório:**
    ```sh
-   git clone https://github.com/JoaoPedroVicentin/rate-limiter
+   git clone https://github.com/JoaoPedroVicentin/rate-limiter.git
    cd rate-limiter
    ```
 
@@ -73,7 +73,7 @@ Esta API implementa um rate limiter (limitador de requisições) utilizando Redi
 
 2. **Testes automatizados:**
    ```sh
-   go test github.com/JoaoPedroVicentin/rate-limiter/internal/entity/rate_limiter.git
+   go test github.com/JoaoPedroVicentin/rate-limiter/internal/entity/rate_limiter
    ```
 
 <div align="center">
